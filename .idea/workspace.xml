@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c948e413-155c-444f-a21f-067fbbdee167" name="Default Changelist" comment="create directories and packages">
-      <change afterPath="$PROJECT_DIR$/src/by/delivery/dao/DishDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/delivery/dao/DishDaoImpl.java" afterDir="false" />
+    <list default="true" id="c948e413-155c-444f-a21f-067fbbdee167" name="Default Changelist" comment="add DishDao&#10;add DishDaoImpl">
       <change afterPath="$PROJECT_DIR$/src/by/delivery/dao/OrderDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/by/delivery/dao/OrderDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +121,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Training-Project-EE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/classes/filter" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -146,6 +143,21 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -178,7 +190,8 @@
       <updated>1585223923591</updated>
       <workItem from="1585223929634" duration="2732000" />
       <workItem from="1585294002541" duration="9850000" />
-      <workItem from="1585318759370" duration="1733000" />
+      <workItem from="1585318759370" duration="2490000" />
+      <workItem from="1585404023601" duration="2288000" />
     </task>
     <task id="LOCAL-00001" summary="create develop branch">
       <created>1585226933785</created>
@@ -201,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585304149088</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add DishDao&#10;add DishDaoImpl">
+      <created>1585320614913</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585320614914</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +265,10 @@
     <MESSAGE value="create develop branch" />
     <MESSAGE value="create directories and packages" />
     <MESSAGE value="add lib/mysql-connector-java-8.0.15&#10;add dao/UserDao&#10;add dao/UserDaoImpl&#10;add dao/ConnectionManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lib/mysql-connector-java-8.0.15&#10;add dao/UserDao&#10;add dao/UserDaoImpl&#10;add dao/ConnectionManager" />
+    <MESSAGE value="add DishDao&#10;add DishDaoImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DishDao&#10;add DishDaoImpl" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="163" key="#SQL_Dialects" timestamp="1585300726034">
@@ -256,30 +279,30 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585300998641" />
-    <state x="645" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1585319333934">
+    <state x="645" y="214" key="#com.intellij.ide.util.MemberChooser" timestamp="1585404481974">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="645" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1585319333934" />
-    <state x="465" y="99" key="CommitChangelistDialog2" timestamp="1585320556817">
+    <state x="645" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1585404481974" />
+    <state x="465" y="99" key="CommitChangelistDialog2" timestamp="1585320614183">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="465" y="99" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1585320556817" />
+    <state x="465" y="99" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1585320614183" />
     <state x="92" y="92" width="1496" height="826" key="DiffContextDialog" timestamp="1585227731874">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="92" y="92" width="1496" height="826" key="DiffContextDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585227731874" />
-    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1585319599196">
+    <state x="620" y="260" key="FileChooserDialogImpl" timestamp="1585404128730">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1585319599196" />
+    <state x="620" y="260" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1585404128730" />
     <state x="432" y="238" key="Vcs.Push.Dialog.v2" timestamp="1585295404628">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="432" y="238" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1585295404628" />
-    <state x="536" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1585318761273">
+    <state x="536" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1585404077606">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="536" y="329" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585318761273" />
+    <state x="536" y="329" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585404077606" />
     <state x="649" y="422" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585294990548">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
