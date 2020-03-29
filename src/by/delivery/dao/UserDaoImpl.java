@@ -36,7 +36,7 @@ public class UserDaoImpl implements UserDao<User> {
             statement.setString(2, user.getSurname());
             statement.setString(3, user.getAddress());
             statement.setString(4, user.getEmail());
-            statement.setLong(5, user.getPhoneNumber());
+            statement.setString(5, user.getPhoneNumber());
             statement.setString(6, user.getPassword());
             statement.executeUpdate();
 
@@ -57,7 +57,7 @@ public class UserDaoImpl implements UserDao<User> {
             statement.setString(2, newUser.getSurname());
             statement.setString(3, newUser.getAddress());
             statement.setString(4, newUser.getEmail());
-            statement.setLong(5, newUser.getPhoneNumber());
+            statement.setString(5, newUser.getPhoneNumber());
             statement.setString(6, newUser.getPassword());
             statement.executeUpdate();
 
@@ -99,7 +99,7 @@ public class UserDaoImpl implements UserDao<User> {
                         .setSurname(resultSet.getString("surname"))
                         .setAddress(resultSet.getString("address"))
                         .setEmail(resultSet.getString("email"))
-                        .setPhoneNumber(resultSet.getLong("phone_number"))
+                        .setPhoneNumber(resultSet.getString("phone_number"))
                         .setPassword(resultSet.getString("password"))
                         .build();
             }

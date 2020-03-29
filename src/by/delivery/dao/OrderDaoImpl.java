@@ -5,6 +5,7 @@ import by.delivery.entity.Order;
 import by.delivery.entity.User;
 
 import java.sql.*;
+import java.time.LocalDateTime;
 
 public class OrderDaoImpl implements OrderDao<User, Dish, Order> {
 
@@ -34,7 +35,7 @@ public class OrderDaoImpl implements OrderDao<User, Dish, Order> {
             PreparedStatement statement = connection.prepareStatement(INSERT_QUERY, Statement.RETURN_GENERATED_KEYS);
             statement.setLong(1, user.getId());
             statement.setLong(2, dish.getId());
-            statement.setDate(3, Date.valueOf(order.getDateTime()));
+            statement.setDate(3, Date.valueOf(String.valueOf(order.getDateTime())));
             statement.executeUpdate();
 
             statement.close();
