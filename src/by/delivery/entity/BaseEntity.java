@@ -4,6 +4,7 @@ public abstract class BaseEntity {
 
     private Long id;
 
+
     public BaseEntity() {
     }
 
