@@ -4,7 +4,9 @@ public abstract class BaseEntity {
 
     private Long id;
 
-    public BaseEntity(){}
+
+    public BaseEntity() {
+    }
 
     public BaseEntity(Long id) {
         this.id = id;

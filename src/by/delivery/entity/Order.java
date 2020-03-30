@@ -50,30 +50,35 @@ public class Order extends BaseEntity {
     public int hashCode() {
         return Objects.hash(dateTime, user, dish);
     }
-    public static class Builder{
+public static class Builder {
 
         private Order newOrder;
 
-        public Builder(){
+        public Builder() {
             newOrder = new Order();
         }
-        public Builder setId(Long id){
+
+        public Builder setId(Long id) {
             newOrder.setId(id);
             return this;
         }
-        public Builder setDateTime(LocalDateTime dateTime){
+
+        public Builder setDateTime(LocalDateTime dateTime) {
             newOrder.dateTime = dateTime;
             return this;
         }
-        public Builder setUser(User user){
+
+        public Builder setUser(User user) {
             newOrder.user = user;
             return this;
         }
-        public Builder setDish(Dish dish){
+
+        public Builder setDish(Dish dish) {
             newOrder.dish = dish;
             return this;
         }
-        public Order build(){
+
+        public Order build() {
             return newOrder;
         }
     }

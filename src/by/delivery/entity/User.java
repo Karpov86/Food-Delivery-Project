@@ -4,7 +4,11 @@ import java.util.Objects;
 
 public class User extends BaseEntity {
 
-    private Long phoneNumber;
+
+    private String phoneNumber;
+
+    
+
     private String name;
     private String surname;
     private String address;
@@ -14,13 +18,13 @@ public class User extends BaseEntity {
     public User() {
     }
 
-    public Long getPhoneNumber() {
+
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(Long phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
+    public void setPhoneNumber(String phoneNumber) {
+
 
     public String getName() {
         return name;
@@ -105,10 +109,7 @@ public class User extends BaseEntity {
             return this;
         }
 
-        public Builder setPhoneNumber(Long phoneNumber) {
-            newUser.phoneNumber = phoneNumber;
-            return this;
-        }
+        public Builder setPhoneNumber(String phoneNumber) {
 
         public Builder setName(String name) {
             newUser.name = name;
