@@ -50,6 +50,7 @@ public class Order extends BaseEntity {
     public int hashCode() {
         return Objects.hash(dateTime, user, dish);
     }
+
 public static class Builder {
 
         private Order newOrder;

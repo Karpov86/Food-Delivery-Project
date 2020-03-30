@@ -6,9 +6,6 @@ public class User extends BaseEntity {
 
 
     private String phoneNumber;
-
-    
-
     private String name;
     private String surname;
     private String address;
@@ -25,7 +22,7 @@ public class User extends BaseEntity {
 
     public void setPhoneNumber(String phoneNumber) {
 
-
+    }
     public String getName() {
         return name;
     }
@@ -110,34 +107,38 @@ public class User extends BaseEntity {
         }
 
         public Builder setPhoneNumber(String phoneNumber) {
-
-        public Builder setName(String name) {
-            newUser.name = name;
+            newUser.phoneNumber = phoneNumber;
             return this;
         }
 
-        public Builder setSurname(String surname) {
-            newUser.surname = surname;
-            return this;
-        }
+            public Builder setName (String name){
+                newUser.name = name;
+                return this;
+            }
 
-        public Builder setAddress(String address) {
-            newUser.address = address;
-            return this;
-        }
+            public Builder setSurname (String surname){
+                newUser.surname = surname;
+                return this;
+            }
 
-        public Builder setEmail(String email) {
-            newUser.email = email;
-            return this;
-        }
+            public Builder setAddress (String address){
+                newUser.address = address;
+                return this;
+            }
 
-        public Builder setPassword(String password) {
-            newUser.password = password;
-            return this;
-        }
+            public Builder setEmail (String email){
+                newUser.email = email;
+                return this;
+            }
 
-        public User build() {
-            return newUser;
+            public Builder setPassword (String password){
+                newUser.password = password;
+                return this;
+            }
+
+            public User build () {
+                return newUser;
+            }
         }
     }
-}
+
