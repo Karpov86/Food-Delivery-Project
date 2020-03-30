@@ -1,15 +1,16 @@
 package by.delivery.dao;
 
+import by.delivery.entity.User;
+
 import java.sql.*;
-import java.util.Optional;
 
 public class UserDaoImpl implements UserDao<User> {
 
-    private static UserDaoImpl INSTANCE;
-    private static final String INSERT_QUERY = "INSERT INTO users (name, surname, address, email, phone_number) VALUES (?, ?, ?, ?, ?);";
-    private static final String UPDATE_QUERY = "UPDATE users SET name = ?, surname = ?, address = ?, email = ?, phone_number = ? WHERE id = ?;";
+    private static final String INSERT_QUERY = "INSERT INTO users (name, surname, address, email, phone_number, password) VALUES (?, ?, ?, ?, ?, ?);";
+    private static final String UPDATE_QUERY = "UPDATE users SET name = ?, surname = ?, address = ?, email = ?, phone_number = ?, password = ? WHERE id = ?;";
     private static final String DELETE_QUERY = "DELETE FROM users WHERE id = ?;";
     private static final String FIND_USER_QUERY = "SELECT * FROM users WHERE id = ?;";
+    private static UserDaoImpl INSTANCE;
 
     private UserDaoImpl() {
 
@@ -35,7 +36,8 @@ public class UserDaoImpl implements UserDao<User> {
             statement.setString(2, user.getSurname());
             statement.setString(3, user.getAddress());
             statement.setString(4, user.getEmail());
-            statement.setLong(5, user.getPhoneNumber);
+            statement.setString(5, user.getPhoneNumber());
+            statement.setString(6, user.getPassword());
             statement.executeUpdate();
 
             statement.close();
@@ -47,15 +49,16 @@ public class UserDaoImpl implements UserDao<User> {
     }
 
     @Override
-    public boolean update(Long id, User newUserData) {
+    public boolean update(Long id, User newUser) {
 
         try (Connection connection = ConnectionManager.newConnection()) {
             PreparedStatement statement = connection.prepareStatement(UPDATE_QUERY);
-            statement.setString(1, newUserData.getName());
-            statement.setString(2, newUserData.getSurname());
-            statement.setString(3, newUserData.getAddress());
-            statement.setString(4, newUserData.getEmail());
-            statement.setLong(5, newUserData.getLong());
+            statement.setString(1, newUser.getName());
+            statement.setString(2, newUser.getSurname());
+            statement.setString(3, newUser.getAddress());
+            statement.setString(4, newUser.getEmail());
+            statement.setString(5, newUser.getPhoneNumber());
+            statement.setString(6, newUser.getPassword());
             statement.executeUpdate();
 
             statement.close();
@@ -91,12 +94,13 @@ public class UserDaoImpl implements UserDao<User> {
             ResultSet resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
-                result = new User.Builder()
+                user = new User.Builder()
                         .setName(resultSet.getString("name"))
                         .setSurname(resultSet.getString("surname"))
                         .setAddress(resultSet.getString("address"))
                         .setEmail(resultSet.getString("email"))
-                        .setPhoneNumber(resultSet.getLong("phone_number"))
+                        .setPhoneNumber(resultSet.getString("phone_number"))
+                        .setPassword(resultSet.getString("password"))
                         .build();
             }
 

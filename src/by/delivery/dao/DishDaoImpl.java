@@ -1,5 +1,8 @@
 package by.delivery.dao;
 
+import by.delivery.entity.Category;
+import by.delivery.entity.Dish;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -39,7 +42,7 @@ public class DishDaoImpl implements DishDao<Dish, Category> {
                         .setName(resultSet.getString("name"))
                         .setPrice(resultSet.getFloat("price"))
                         .setIsSale(resultSet.getBoolean("sale"))
-                        .setCategory(Category.valueof(resultSet.getString("category")))
+                        .setCategory(Category.valueOf(resultSet.getString("category")))
                         .build());
             }
 
