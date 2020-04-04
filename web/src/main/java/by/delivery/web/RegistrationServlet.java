@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static by.delivery.web.util.ServletUtil.createViewPath;
+import static by.delivery.util.ServletUtil.createViewPath;
 
 @WebServlet(urlPatterns = "/register", name = "RegistrationServlet")
 public class RegistrationServlet extends HttpServlet {

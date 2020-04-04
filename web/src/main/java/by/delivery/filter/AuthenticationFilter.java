@@ -1,4 +1,4 @@
-package by.delivery.web.filter;
+package by.delivery.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

@@ -1,4 +1,4 @@
-package by.delivery.web.util;
+package by.delivery.util;
 
 import java.io.IOException;
 import java.io.InputStream;

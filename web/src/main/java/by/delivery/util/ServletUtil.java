@@ -1,4 +1,4 @@
-package by.delivery.web.util;
+package by.delivery.util;
 
 public final class ServletUtil {
 

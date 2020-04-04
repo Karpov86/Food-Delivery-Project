@@ -2,7 +2,6 @@ package by.delivery.web;
 
 import by.delivery.entity.User;
 import by.delivery.service.AuthenticationUserService;
-import by.delivery.web.util.UTF8Control;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,7 +13,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import static by.delivery.web.util.ServletUtil.createViewPath;
+import static by.delivery.util.ServletUtil.createViewPath;
 
 @WebServlet(urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
