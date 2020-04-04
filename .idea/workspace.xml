@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="web:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c948e413-155c-444f-a21f-067fbbdee167" name="Default Changelist" comment="add">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+    <list default="true" id="c948e413-155c-444f-a21f-067fbbdee167" name="Default Changelist" comment="fixed">
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/by/delivery/web/util/UTF8Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Food delivery project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Food delivery project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/delivery/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/delivery/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/delivery/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/delivery/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourses/translations.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/translations.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourses/translations_en_EN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/translations_en_EN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourses/translations_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/translations_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/dao/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/dao/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/dao/DishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/dao/DishDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/dao/DishDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/dao/DishDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/dao/OrderDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/dao/OrderDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/entity/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/entity/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/by/delivery/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/service/AuthenticationUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/by/delivery/service/AuthenticationUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/by/delivery/service/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/by/delivery/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/by/delivery/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/by/delivery/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/web/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/by/delivery/web/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/delivery/web/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/by/delivery/web/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/filter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/by/delivery/web/filter/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/by/delivery/web/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/util/ServletUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/by/delivery/web/util/ServletUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +90,19 @@
         <item name="food_delivery" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="food_delivery: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="dishes: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -59,41 +112,27 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/login.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="alwaysUpdateSnapshots" value="false" />
         <option name="checksumPolicy" value="FAIL" />
         <option name="failureBehavior" value="FAST" />
-        <option name="localRepository" value="" />
-        <option name="mavenHome" value="" />
-        <option name="nonRecursive" value="false" />
-        <option name="outputLevel" value="INFO" />
-        <option name="pluginUpdatePolicy" value="DEFAULT" />
-        <option name="printErrorStackTraces" value="false" />
-        <option name="usePluginRegistry" value="false" />
-        <option name="userSettingsFile" value="" />
-        <option name="workOffline" value="false" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="createModuleGroups" value="false" />
-        <option name="createModulesForAggregators" value="true" />
-        <option name="dedicatedModuleDir" value="" />
-        <option name="downloadDocsAutomatically" value="false" />
-        <option name="downloadSourcesAutomatically" value="false" />
-        <option name="excludeTargetFolder" value="true" />
-        <option name="generatedSourcesFolder" value="AUTODETECT" />
-        <option name="importAutomatically" value="false" />
-        <option name="keepSourceFolders" value="true" />
-        <option name="lookForNested" value="false" />
-        <option name="updateFoldersOnImportPhase" value="process-resources" />
-        <option name="useMavenOutput" value="true" />
+        <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
-    </option>
-    <option name="enabledProfiles">
-      <list />
     </option>
   </component>
   <component name="ProjectId" id="1ZfIrybRClRHMweTxAOW2s1IPs0" />
@@ -106,26 +145,126 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Training-Project-EE" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.21354933" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\Food delivery project\resourses" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="by.delivery.web.util" />
+      <recent name="by.delivery.service" />
+      <recent name="filter" />
+      <recent name="by.delivery.web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\Food delivery project\web\src\main\webapp" />
+      <recent name="D:\Study\Food delivery project\web\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.53">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.delivery.entity.Main" />
+      <module name="dao" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.delivery.Test" />
+      <module name="Food delivery project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.delivery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.53" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="web:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/web_war_exploded" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
-      <server-settings />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_53_Food_delivery_project_2" />
+      </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63375" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -133,6 +272,17 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.53" />
+      <item itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -143,6 +293,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -163,7 +318,39 @@
       <updated>1585223923591</updated>
       <workItem from="1585223929634" duration="1052000" />
       <workItem from="1585499874751" duration="294000" />
+      <workItem from="1585764655850" duration="33000" />
+      <workItem from="1585908198560" duration="11922000" />
+      <workItem from="1585983015013" duration="3327000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed">
+      <created>1585587406122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585587406123</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add">
+      <created>1585593879142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585593879142</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed">
+      <created>1585593909497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585593909497</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add">
+      <created>1585594709303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585594709303</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,16 +400,107 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fixed" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="676" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585587329735">
+    <state x="432" y="163" key="#Project_Structure" timestamp="1585920071721">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="163" key="#Project_Structure/0.0.1680.1010@0.0.1680.1010" timestamp="1585920071721" />
+    <state x="294" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585920072324">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="294" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585920072324" />
+    <state x="645" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1585983720684">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="645" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1585983720684" />
+    <state x="676" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585764669509">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585500329498" />
-    <state x="676" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585587329735" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1585500419696">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="676" y="369" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585764669509" />
+    <state x="550" y="430" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585912277730">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="550" y="430" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585912277730" />
+    <state x="636" y="364" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585983773241">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="636" y="364" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1010@0.0.1680.1010" timestamp="1585983773241" />
+    <state x="636" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1585912135891">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="636" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1680.1010@0.0.1680.1010" timestamp="1585912135891" />
+    <state x="570" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585592918412">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585592918412" />
+    <state x="430" y="9" key="CommitChangelistDialog2" timestamp="1585594708750">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585500419696" />
+    <state x="430" y="9" key="CommitChangelistDialog2/0.0.1680.1010@0.0.1680.1010" timestamp="1585594708750" />
+    <state x="620" y="246" key="FileChooserDialogImpl" timestamp="1585986336945">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="620" y="246" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1585986336945" />
+    <state width="1125" height="151" key="GridCell.Tab.0.bottom" timestamp="1585985596167">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596167" />
+    <state width="1125" height="151" key="GridCell.Tab.0.center" timestamp="1585985596167">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596167" />
+    <state width="1125" height="151" key="GridCell.Tab.0.left" timestamp="1585985596167">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596167" />
+    <state width="1125" height="151" key="GridCell.Tab.0.right" timestamp="1585985596167">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596167" />
+    <state width="1125" height="151" key="GridCell.Tab.1.bottom" timestamp="1585985596104">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596104" />
+    <state width="1125" height="151" key="GridCell.Tab.1.center" timestamp="1585985596104">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596104" />
+    <state width="1125" height="151" key="GridCell.Tab.1.left" timestamp="1585985596104">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596104" />
+    <state width="1125" height="151" key="GridCell.Tab.1.right" timestamp="1585985596104">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596104" />
+    <state width="1125" height="151" key="GridCell.Tab.2.bottom" timestamp="1585985596104">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596104" />
+    <state width="1125" height="151" key="GridCell.Tab.2.center" timestamp="1585985596104">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596104" />
+    <state width="1125" height="151" key="GridCell.Tab.2.left" timestamp="1585985596104">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596104" />
+    <state width="1125" height="151" key="GridCell.Tab.2.right" timestamp="1585985596104">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1125" height="151" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1585985596104" />
+    <state x="370" y="160" key="Maven.ArtifactSearchDialog" timestamp="1585917807997">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="370" y="160" key="Maven.ArtifactSearchDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585917807997" />
     <state x="160" y="83" key="MergeDialog" timestamp="1585587295195">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -231,10 +509,27 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="552" y="221" key="MultipleFileMergeDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585587295200" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585500322231">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="320" y="79" key="SettingsEditor" timestamp="1585923488930">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="320" y="79" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1585923488930" />
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2" timestamp="1585594721456">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="238" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1585594721456" />
+    <state x="656" y="283" key="chooseDestDirectoryDialog" timestamp="1585909711185">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="656" y="283" key="chooseDestDirectoryDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585909711185" />
+    <state x="509" y="289" key="com.intellij.ide.util.TipDialog" timestamp="1585983098323">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585500322231" />
+    <state x="509" y="289" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585983098323" />
+    <state x="544" y="398" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585908749955">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="544" y="398" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1680.1010@0.0.1680.1010" timestamp="1585908749955" />
     <state x="649" y="422" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585226910748">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -243,5 +538,9 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="621" y="218" key="git4idea.branch.GitSmartOperationDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1585587254853" />
+    <state x="404" y="188" key="new project wizard" timestamp="1585909321634">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="404" y="188" key="new project wizard/0.0.1680.1010@0.0.1680.1010" timestamp="1585909321634" />
   </component>
 </project>
