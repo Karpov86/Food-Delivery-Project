@@ -1,73 +1,46 @@
 package by.delivery.entity;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+import javax.persistence.*;
 import java.util.Objects;
 
+@Setter
+@Getter
+@NoArgsConstructor
+@ToString
+
+@Entity
+@Table(name = "dishes")
 public class Dish extends BaseEntity {
 
+    @Column(name = "price")
     private Float price;
+    @Column(name = "sale")
     private Boolean isSale;
+    @Column(name = "name")
     private String name;
+    @Column(name = "category")
+    @Enumerated(value = EnumType.STRING)
     private Category category;
-
-    public Dish() {
-    }
-
-    public Float getPrice() {
-        return price;
-    }
-
-    public void setPrice(Float price) {
-        this.price = price;
-    }
-
-    public Boolean getSale() {
-        return isSale;
-    }
-
-    public void setSale(Boolean sale) {
-        isSale = sale;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dish dish = (Dish) o;
-        return Objects.equals(price, dish.price) &&
-                Objects.equals(isSale, dish.isSale) &&
-                Objects.equals(name, dish.name) &&
-                category == dish.category;
+        return Objects.equals(price, dish.price)
+                && Objects.equals(isSale, dish.isSale)
+                && Objects.equals(name, dish.name)
+                && category == dish.category;
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(price, isSale, name, category);
-    }
-
-    @Override
-    public String toString() {
-        return "Dish{" +
-                "price=" + price +
-                ", isSale=" + isSale +
-                ", name='" + name + '\'' +
-                ", category=" + category +
-                '}';
     }
 
     public static class Builder {

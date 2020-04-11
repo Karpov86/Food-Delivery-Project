@@ -1,8 +1,6 @@
-﻿package by.delivery.web;
+package by.delivery.web;
 
-import by.delivery.entity.Category;
 import by.delivery.entity.Dish;
-import by.delivery.service.DishService;
 import by.delivery.service.DishServiceImpl;
 
 import javax.servlet.ServletException;
@@ -23,7 +21,7 @@ public class DishesByCategoryServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        List<Dish> dishes = new DishServiceImpl().find(Category.valueOf(request.getParameter("category")));
+        List<Dish> dishes = new DishServiceImpl().find((request.getParameter("category")));
         request.setAttribute("dishes", dishes);
         request.getRequestDispatcher(createViewPath("menu")).forward(request, response);
 

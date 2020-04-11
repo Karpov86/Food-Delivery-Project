@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DishDaoImpl implements DishDao<Dish, Category> {
+public final class DishDaoImpl implements DishDao<Dish> {
 
     private static final String FIND_DISHES_FROM_CATEGORY_QUERY = "SELECT * FROM dishes WHERE category = ?;";
     private static DishDaoImpl INSTANCE;
@@ -31,10 +31,12 @@ public class DishDaoImpl implements DishDao<Dish, Category> {
     }
 
     @Override
-    public List<Dish> find(Category category) {
+    public List<Dish> find(final String category) {
         List<Dish> result = new ArrayList<>();
         try (Connection connection = ConnectionManager.newConnection()) {
-            PreparedStatement statement = connection.prepareStatement(FIND_DISHES_FROM_CATEGORY_QUERY);
+            PreparedStatement statement =
+                    connection.prepareStatement(FIND_DISHES_FROM_CATEGORY_QUERY);
+            statement.setString(1, category);
             ResultSet resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
