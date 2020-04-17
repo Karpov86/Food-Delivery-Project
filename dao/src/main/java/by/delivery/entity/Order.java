@@ -1,16 +1,28 @@
 package by.delivery.entity;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+@NoArgsConstructor
+@Setter
+@Getter
+@ToString
+
+@Entity
+@Table(name = "orders")
 public class Order extends BaseEntity {
-
+@Column(name = "date")
     private LocalDateTime dateTime;
-    private User user;
+@Column(name = "user_id")
+private User user;
+@Column(name = "dish_id")
     private Dish dish;
-
-    public Order() {
-    }
 
     public LocalDateTime getDateTime() {
         return dateTime;
